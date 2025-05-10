@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Colaborativo en Tiempo Real</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Chat Colaborativo</h1>
+      <div class="user-info">
+        <span>Tu nombre: </span>
+        <span id="username">Conectando...</span>
+        <button id="change-username">Cambiar</button>
+      </div>
+      <div class="connection-status">
+        <span id="status-indicator" class="disconnected"></span>
+        <span id="connection-status">Desconectado</span>
+      </div>
+    </div>
+    
+    <div class="chat-messages" id="chat-messages">
+      <div class="welcome-message">
+        Bienvenido al chat colaborativo en tiempo real
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="Escribe un mensaje..." disabled>
+      <button id="send-button" disabled>Enviar</button>
+    </div>
+  </div>
+  
+  <script src="client.js"></script>
+</body>
+</html>
